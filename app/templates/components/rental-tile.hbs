@@ -2,8 +2,8 @@
   {{#if isImageShowing}}
     <p><img src={{rental.image}} alt={{rental.type}} {{action 'imageHide'}}></p>
   {{else}}
-    <button {{action 'imageShow'}}>Image</button>
+    <button {{action 'imageShow'}} class="btn btn-xs btn-primary">Image</button>
   {{/if}}
 {{!--   {{update-rental rental=rental update="update"}} --}}
-  <button {{action 'delete' rental}}>Delete</button>
+  <button {{action 'delete' rental}} class="btn btn-xs btn-danger">Delete</button>
 </li>

@@ -6,9 +6,13 @@ export default Ember.Route.extend({
   },
 
   actions: {
-    saveCity(params) {
-      var newCity = this.store.createRecord('city', params);
-      newCity.save();
+    update(city, params) {
+      Object.keys(params).forEach(function(key) {
+        if(params[key]!==undefined) {
+          city.set(key,params[key]);
+        }
+      });
+      city.save();
       this.transitionTo('index');
     }
   }
