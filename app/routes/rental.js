@@ -14,6 +14,6 @@ export default Ember.Route.extend({
       });
       rental.save();
       this.transitionTo('index');
-    }
+    } 
   }
 });

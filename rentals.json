@@ -16,5 +16,20 @@
     "type": "Apartment",
     "bedrooms": 3,
     "image": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Wheeldon_Apartment_Building_-_Portland_Oregon.jpg"
+  }],
+
+  "cities": [{
+    "name": "Portland",
+    "country": "USA",
+    "attractions": ["Powell's","Bridges","Trees"]
+  }, {
+    "name": "Seattle",
+    "country": "USA",
+    "attractions": ["Needle","Pike's","Puget Sound"]
+  }, {
+    "name": "Barcelona",
+    "country": "Spain",
+    "attractions": ["Gaudi","Cathedrals","Arc de Triomf"]
   }]
 }
+

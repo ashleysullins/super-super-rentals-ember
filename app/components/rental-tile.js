@@ -13,6 +13,7 @@ export default Ember.Component.extend({
       this.sendAction('update', rental, params);
     },
     delete(rental) {
+      debugger;
       if (confirm('Are you sure you want to delete this rental?')) {
         this.sendAction('destroyRental', rental);
       }
