@@ -17,9 +17,9 @@
           {{input value=attractions id="attractions" placeholder=city.attractions}}
         </div>
 
-        <button {{action 'update' city}}>Save</button>
+        <button {{action 'update' city}} class="btn btn-xs btn-default">Save</button>
       </form>
     </div>
 {{else}}
-    <button {{action 'updateCityForm'}}>Update</button>
+    <button {{action 'updateCityForm'}} class="btn btn-xs btn-success">Update</button>
 {{/if}}
