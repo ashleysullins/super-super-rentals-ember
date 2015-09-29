@@ -1,4 +1,4 @@
 <li>
-  {{city.name}}, {{city.country}}
-  <button {{action 'delete' city}}>Delete</button>
+  {{#link-to 'city' city.id}} {{city.name}}, {{city.country}} {{/link-to}}
+  <button {{action 'delete' city}} class="btn btn-xs btn-danger">Delete</button>
 </li>
