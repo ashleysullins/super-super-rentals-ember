@@ -14,7 +14,6 @@ We hope you find exactly what you're looking for in a place to stay.
 
 <ul>
   {{#each model.cities as |city|}}
-    <li>city</li>
     <li>{{#link-to 'city' city.id}}{{city.name}}{{/link-to}}</li>
   {{/each}}
 </ul>
@@ -23,5 +22,5 @@ We hope you find exactly what you're looking for in a place to stay.
 
 <hr>
 
-{{#link-to 'about'}}About{{/link-to}} | 
+{{#link-to 'about'}}About{{/link-to}} |
 {{#link-to 'contact'}}Contact Us{{/link-to}}

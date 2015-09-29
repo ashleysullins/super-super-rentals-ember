@@ -1,10 +1,10 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  addNewCity: false,
+  addCityForm: false,
   actions: {
-    cityFormShow() {
-      this.set('addNewCity', true);
+    showCityForm() {
+      this.set('addCityForm', true);
     },
 
     saveCity() {
@@ -13,7 +13,7 @@ export default Ember.Component.extend({
         country: this.get('country'),
         attractions: this.get('attractions')
       };
-      this.set('addNewCity', false),
+      this.set('addCityForm', false),
       this.sendAction('saveCity', params);
     }
   }
