@@ -21,14 +21,14 @@ export default Ember.Route.extend({
       this.transitionTo('index');
     },
 
-    destroyRental(rental) {
-      rental.destroyRecord();
-      this.transitionTo('index');
-    },
-
-    destroyCity(city) {
-      city.destroyRecord();
-      this.transitionTo('index');
-    }
+    // destroyRental(rental) {
+    //   rental.destroyRecord();
+    //   this.transitionTo('index');
+    // },
+    //
+    // destroyCity(city) {
+    //   city.destroyRecord();
+    //   this.transitionTo('index');
+    // }
   }
 });

@@ -1,7 +1,5 @@
 <h2>More information about {{model.name}}</h2>
 
-{{city-detail city=model}}
+<!-- {{city-detail city=model}} -->
 
-{{update-city city=model update="update"}}
-<!-- To figure out later... -->
-<!-- <button {{action 'delete' city}}>Delete</button> -->
+{{city-detail city=model update="update" destroyCity="destroyCity"}}
